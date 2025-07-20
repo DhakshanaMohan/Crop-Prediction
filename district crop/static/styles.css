@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.index-page {
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background image covers the full page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Container to center content */
+.container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffda79;
+}
+
+/* Label for dropdown menu */
+label {
+    font-size: 16px;
+    color: #ffda79;
+}
+
+/* Dropdown select style */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styles */
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #218838;
+}
+
+/* Flexbox container for cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Card styles */
+.card {
+    background-color: gray;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Card title style */
+.card h2 {
+    font-size: 18px;
+    color: #ffda79;
+    margin-bottom: 10px;
+}
+
+/* Card text style */
+.card p {
+    font-size: 14px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+/* Navigation button */
+.nav-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover effect for navigation button */
+.nav-button:hover {
+    background-color: #c74c2b;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="index-page"> <!-- Added the background image class here -->
+    <div class="container">
+        <h1>Crop Prediction System</h1>
+        <form action="/result" method="POST">
+            <label for="district">Select District:</label>
+            <select id="district" name="district" required>
+                {% for district in districts %}
+                    <option value="{{ district }}">{{ district }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Get Crop Information</button>
+        </form>
+    </div>
+</body>
+</html>

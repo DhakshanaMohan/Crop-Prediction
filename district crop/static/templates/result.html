@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Prediction Results for {{ district }}</h1>
+        <button onclick="window.location.href='{{ url_for('index') }}'" class="nav-button">Back to Prediction Page</button>
+
+        <!-- Displaying results as cards -->
+        <div class="card-container">
+            {% for result in crops_info %}
+            <div class="card">
+                <h2>{{ result['crop'] }}</h2>
+                <p><strong>Soil Type:</strong> {{ result['soil_type'] }}</p>
+                <p><strong>Ideal Season:</strong> {{ result['ideal_season'] }}</p>
+                <p><strong>Average Temperature:</strong> {{ result['temperature'] }} °C</p>
+                <p><strong>Average Rainfall:</strong> {{ result['rainfall'] }} mm</p>
+                <p><strong>Predicted Yield:</strong> {{ result['yield'] }} tons/acre</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
